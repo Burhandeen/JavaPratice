@@ -13,17 +13,7 @@ public class MaximumFinder {
         System.out.println("Maximum is: " + result);
     }
 
-    public static double maximum(double x, double y, double z){
-        double maximumValue = x;
-
-        if(y > maximumValue){
-            maximumValue = y;
-        }
-
-        if(z > maximumValue){
-            maximumValue = z;
-        }
-
-        return maximumValue;
+    public static double maximum(double x, double y, double z) {
+        return Math.max(x, Math.max(y, z));
     }
 }
